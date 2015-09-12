@@ -21,14 +21,19 @@
 
     var singleclick = $.event.special.singleclick = {
 
-        delegateType: 'click',
-
+        // Follow the 'click' event flow for direct binding.
         bindType: 'click',
 
+        // Follow the 'click' event flow for delegated binding.
+        delegateType: 'click',
+
+        // Maximum time between 2 clicks so they are considered a double click.
         timeout: 250,
 
+        // The plugin will save data on an element (using $.data) under this property.
         dataProp: 'singleclicktimeout',
 
+        // Called when a click event is about to be triggered.
         handle: function(event) {
             // Cache a jQuery wrapped version of the DOM element.
             var $el = $(this);
@@ -41,6 +46,7 @@
             }
         },
 
+        // Queues the 'singleclick' event for future triggering.
         queueTrigger: function($el, event, args) {
             // Queue a trigger function.
             var timeout = setTimeout(function() {
@@ -63,6 +69,8 @@
             $el.data(singleclick.dataProp, timeout);
         },
 
+        // Cancels a previously queued 'singleclick' event if such exists and it hasn't
+        // been triggered yet. Returns true if it indeed canceled a queued event.
         abortTrigger: function($el, events, args) {
             var timeout = $el.data(singleclick.dataProp);
             if (timeout) {
