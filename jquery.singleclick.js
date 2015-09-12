@@ -1,4 +1,4 @@
-// jQeury SingleClick
+// jQuery SingleClick
 // ----------------------------------
 // v1.0.0
 //
