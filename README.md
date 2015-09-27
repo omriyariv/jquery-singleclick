@@ -1,5 +1,5 @@
 # jquery-singleclick
-jQuery plugin for adding a custom 'singleclick' event to differentiate a single click from a double-click. The custom 'singleclick' event is fired after a standard click event with a small delay to make sure that the original first click wasn't a part of a double-click.
+jQuery plugin for adding a custom 'singleclick' event to differentiate a single-click from a double-click. The custom 'singleclick' event is fired after a standard click event with a small delay to make sure that the original first click wasn't a part of a double-click.
 
 ### Installation
 Clone this repository or install via [Bower](http://bower.io/) or [npm](https://www.npmjs.org/).
