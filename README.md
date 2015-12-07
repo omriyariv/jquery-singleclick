@@ -23,7 +23,7 @@ require('jquery-singleclick', function($) {
 });
 ```
 
-After including the plugin, you'll be able to register handlers the custom 'singleclick' event as you would register any other jQuery handler:
+After including the plugin, you'll be able to register handlers for the custom 'singleclick' event as you would register any other jQuery handler:
 ```js
 $('#someElement').on('singleclick', function(e) {
     console.log('I was clicked once only');
