@@ -23,9 +23,15 @@
     "url": "https://github.com/omriyariv/jquery-singleclick.git"
   },
   "github": "https://github.com/omriyariv/jquery-singleclick",
-  "dependencies": {
-    "jquery": "^1.7.0"
+  "peerDependencies": {
+    "jquery": ">=1.7.0"
   },
   "devDependencies": {
+    "jquery": ">=1.7.0",
+    "jscs": "^3.0.5",
+    "jshint": "^2.9.2"
+  },
+  "scripts": {
+    "lint": "jscs . && jshint ."
   }
 }

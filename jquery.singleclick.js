@@ -50,7 +50,7 @@
     queueTrigger: function($el, event, args) {
       // Create a copy of the original jQuery event to protect against
       // possible object mutations.
-      event = $.Event(event.type, event)
+      event = $.Event(event.type, event);
 
       // Queue a trigger function.
       var timeout = setTimeout(function() {
