@@ -1,6 +1,6 @@
 // jQuery SingleClick
 // ----------------------------------
-// v1.0.0
+// v1.0.1
 //
 // Written by Omri Yariv.
 // Distributed under MIT license.
