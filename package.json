@@ -2,7 +2,7 @@
   "name": "jquery-singleclick",
   "description": "Tell a singleclick from a doubleclick",
   "homepage": "https://github.com/omriyariv/jquery-singleclick",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "jquery.singleclick.js",
   "keywords": [
     "jquery-plugin",
